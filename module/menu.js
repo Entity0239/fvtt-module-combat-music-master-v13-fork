@@ -6,7 +6,7 @@ export class PlaylistManager extends FormApplication {
 			id: 'combat-master-config',
 			title: 'Combat Master',
 			classes: ['sheet'],
-			template: 'modules/combat-music-master/templates/config.html',
+			template: 'modules/combat-music-master-fork/templates/config.html',
 			width: 400,
 			filters: [{ inputSelector: 'input[name="search"]', contentSelector: '.cmm-playlists' }],
 		});
@@ -59,7 +59,7 @@ export class PlaylistManager extends FormApplication {
 			const toggle = target.classList.toggle('star');
 			if (star && star !== target) star.classList.remove('star');
 			const id = target.getAttribute('for');
-			if (toggle) html[0].querySelector(`input#${id}`).checked = toggle;
+			if (toggle) html[0].querySelector(`[id="${id}"]`).checked = toggle;
 		}
 		function removeStar(ev) {
 			const target = ev.target;
@@ -73,7 +73,7 @@ export class PlaylistManager extends FormApplication {
 
 Hooks.once('setup', () => {
 	game.settings.registerMenu(MODULE_ID, 'combatMusicMenu', {
-		name: 'Combat Music Master',
+		name: 'Combat Music Master FORK',
 		label: 'Combat Playlists',
 		hint: 'Select which ones are your combat playlists.',
 		icon: 'fas fa-music',

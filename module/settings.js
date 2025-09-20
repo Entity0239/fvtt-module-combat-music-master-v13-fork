@@ -1,4 +1,4 @@
-export const MODULE_ID = 'combat-music-master';
+export const MODULE_ID = 'combat-music-master-fork';
 
 const settings = {
 	defaultPlaylist: {

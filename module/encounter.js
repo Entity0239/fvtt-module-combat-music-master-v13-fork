@@ -8,7 +8,7 @@ class CombatTrackerMusicManager extends FormApplication {
 			id: 'combat-master-tracker',
 			title: 'Combat Music Master',
 			classes: ['sheet'],
-			template: 'modules/combat-music-master/templates/tracker.html',
+			template: 'modules/combat-music-master-fork/templates/tracker.html',
 			width: 400,
 		});
 	}
@@ -61,12 +61,12 @@ function clickButton() {
 	new CombatTrackerMusicManager().render(true);
 }
 
-function addButton(_encounter, html) {
-	const title = html[0].querySelector('.encounter-title.noborder');
-	const btn = $(button)[0];
-	if (!game.combat) btn.setAttribute('disabled', '');
-	btn.addEventListener('click', clickButton);
-	title.insertAdjacentElement('beforebegin', btn);
+function addButton(_encounter, element) {
+  const title = element.querySelector('.encounter-title');
+  const btn = document.createElement('button');
+  if (!game.combat) btn.setAttribute('disabled', '');
+  btn.addEventListener('click', clickButton);
+  title.insertAdjacentElement('beforebegin', btn);
 }
 
 Hooks.on('renderCombatTracker', addButton);
