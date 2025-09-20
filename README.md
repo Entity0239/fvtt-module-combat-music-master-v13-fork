@@ -1,3 +1,5 @@
+forked for v13 compatibility
+
 # Foundry VTT - 🎹 Combat Music Master
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/elizeuangelo/fvtt-module-combat-music-master)
