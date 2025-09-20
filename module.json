@@ -1,12 +1,12 @@
 {
-    "id": "combat-music-master",
+    "id": "combat-music-master-fork",
     "title": "Combat Music Master",
-    "description": "Control your battle music! Automatically play songs amongst your combat playlists when combat starts.",
-    "version": "1.5.6",
+    "description": "Control your battle music! Automatically play songs amongst your combat playlists when combat starts. FORKED FOR V13 SUPPORT I HOPE",
+    "version": "1.6",
     "authors": [
         {
-            "name": "Mad Wizard",
-            "discord": "mad.wizard"
+            "name": "Mad Wizard/forked by a bear",
+            "discord": ""
         }
     ],
     "esmodules": [
@@ -16,8 +16,8 @@
         "./main.css"
     ],
     "compatibility": {
-        "minimum": 12,
-        "verified": "12.331"
+        "minimum": 13,
+        "verified": "13.348"
     },
     "url": "https://github.com/elizeuangelo/fvtt-module-combat-music-master/",
     "manifest": "https://github.com/elizeuangelo/fvtt-module-combat-music-master/releases/latest/download/module.json",
